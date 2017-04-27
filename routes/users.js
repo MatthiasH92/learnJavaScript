@@ -7,7 +7,7 @@ router.get('/', function (req, res, next) {
     res.send('welcome to users page');
 });
 
-router.get('/create/:username/:age/:country', function (req, res, next) {
+router.post('/create/:username/:age/:country', function (req, res, next) {
     var username = req.params['username'];
     var age = req.params['age'];
     var country = req.params['country'];
